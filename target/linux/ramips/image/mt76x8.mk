@@ -132,6 +132,14 @@ define Device/buffalo_wcr-1166ds
 endef
 TARGET_DEVICES += buffalo_wcr-1166ds
 
+define Device/chaneve_m2
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Chaneve
+  DEVICE_MODEL := M2
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-serial-option kmod-usb-net-cdc-ether
+endef
+TARGET_DEVICES += chaneve_m2
+
 define Device/comfast_cf-wr617ac
   IMAGE_SIZE := 7872k
   DTS := CF-WR617AC
